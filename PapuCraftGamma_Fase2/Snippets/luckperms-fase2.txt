@@ -1,0 +1,17 @@
+# Ejecutar en PebbleHost Console SIN /
+
+# Bridge de nametags
+lp group jugador permission set papucraft.nametag.use true
+
+# AxTrade
+lp group jugador permission set axtrade.trade true
+lp group jugador permission set axtrade.toggle true
+
+# DailyRewards
+lp group jugador permission set dailyreward.use true
+
+# ReportSystem
+lp group jugador permission set reportsystem.report true
+
+# Fundator ya debería tener *; NO dar permisos de moderación/logs a jugador.
+# ApexClan: los comandos de jugador se manejan por el plugin; apex.clan.admin SOLO Fundator/staff.

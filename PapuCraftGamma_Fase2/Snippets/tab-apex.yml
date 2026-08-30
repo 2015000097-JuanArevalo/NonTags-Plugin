@@ -1,0 +1,10 @@
+# plugins/TAB/groups.yml
+_DEFAULT_:
+  tabprefix: "%luckperms-prefix%"
+  tagprefix: "%luckperms-prefix%"
+  customtabname: "%player%"
+  tabsuffix: "%apex_clan_tag%"
+  tagsuffix: "%apex_clan_tag%"
+
+# En plugins/TAB/config.yml deja scoreboard-teams.enabled = true
+# y no actives invisible-nametags globalmente. PapuCraftNametags controla la visibilidad por viewer.

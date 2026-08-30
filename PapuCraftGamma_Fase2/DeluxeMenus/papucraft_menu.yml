@@ -1,0 +1,154 @@
+menu_title: '&8⚔ &6&lPapuCraft Gamma &8⚔'
+open_command:
+  - menu
+  - gamma
+register_command: true
+size: 45
+
+open_commands:
+  - '[sound] BLOCK_CHEST_OPEN'
+
+items:
+  fondo:
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: ' '
+    slots:
+      - 0-10
+      - 12
+      - 14-19
+      - 21
+      - 23
+      - 25-27
+      - 29
+      - 31
+      - 33-44
+
+  shop:
+    material: EMERALD
+    slot: 11
+    display_name: '&a&lTienda del Reino'
+    lore:
+      - '&7Bloques, decoración y materiales'
+      - '&7básicos para construir.'
+      - ''
+      - '&eClick para abrir /shop'
+    left_click_commands:
+      - '[close]'
+      - '[player] shop'
+
+  auction:
+    material: GOLD_INGOT
+    slot: 13
+    display_name: '&6&lCasa de Subastas'
+    lore:
+      - '&7Compra y vende objetos entre jugadores.'
+      - '&7Aquí sí tienen valor los objetos raros.'
+      - ''
+      - '&eClick para abrir /ah'
+    left_click_commands:
+      - '[close]'
+      - '[player] ah'
+
+  clan:
+    material: SHIELD
+    slot: 15
+    display_name: '&b&lClan'
+    lore:
+      - '&7Crea, administra o consulta tu clan.'
+      - ''
+      - '&eClick para abrir /clan'
+    left_click_commands:
+      - '[close]'
+      - '[player] clan'
+
+  homes:
+    material: RED_BED
+    slot: 20
+    display_name: '&d&lMis Homes'
+    lore:
+      - '&7Tienes hasta &f10 homes&7.'
+      - '&7El teletransporte tiene warmup.'
+      - ''
+      - '&eClick para listar tus homes'
+    left_click_commands:
+      - '[close]'
+      - '[player] homelist'
+
+  warps:
+    material: ENDER_PEARL
+    slot: 22
+    display_name: '&5&lWarps del Reino'
+    lore:
+      - '&7Consulta los warps públicos.'
+      - ''
+      - '&eClick para abrir /warplist'
+    left_click_commands:
+      - '[close]'
+      - '[player] warplist'
+
+  rewards:
+    material: CHEST
+    slot: 24
+    display_name: '&e&lRecompensas'
+    lore:
+      - '&7Recompensas diarias, semanales'
+      - '&7y mensuales.'
+      - ''
+      - '&eClick para abrir /rewards'
+    left_click_commands:
+      - '[close]'
+      - '[player] rewards'
+
+  quests:
+    material: WRITABLE_BOOK
+    slot: 28
+    display_name: '&6&lMisiones'
+    lore:
+      - '&7Completa tareas medievales y'
+      - '&7obtén recompensas controladas.'
+      - ''
+      - '&eClick para abrir /quests'
+    left_click_commands:
+      - '[close]'
+      - '[player] quests'
+
+  trade:
+    material: CHEST_MINECART
+    slot: 30
+    display_name: '&a&lIntercambio Seguro'
+    lore:
+      - '&7Intercambia objetos y dinero'
+      - '&7directamente con otro jugador.'
+      - ''
+      - '&fUso: &e/trade <jugador>'
+    left_click_commands:
+      - '[close]'
+      - '[message] &8[&6PapuCraft&8] &7Usa &e/trade <jugador> &7para iniciar un intercambio.'
+
+  nametag:
+    material: NAME_TAG
+    slot: 32
+    display_name: '&f&lVisibilidad del Nametag'
+    lore:
+      - '&7Los miembros de tu clan siempre'
+      - '&7podrán ver tu nombre.'
+      - '&7Para externos puedes activarlo'
+      - '&7o desactivarlo.'
+      - ''
+      - '&eClick para alternar'
+    left_click_commands:
+      - '[player] nametag toggle'
+      - '[refresh]'
+
+  report:
+    material: PAPER
+    slot: 34
+    display_name: '&c&lReportar Jugador'
+    lore:
+      - '&7Reporta conductas que requieran'
+      - '&7revisión del staff.'
+      - ''
+      - '&fUso: &e/report <jugador>'
+    left_click_commands:
+      - '[close]'
+      - '[message] &8[&6PapuCraft&8] &7Usa &e/report <jugador> &7para crear un reporte.'
