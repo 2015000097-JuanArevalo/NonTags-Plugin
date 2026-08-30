@@ -154,12 +154,12 @@ public final class PapuCraftNametags extends JavaPlugin implements Listener, Com
                 // 1) Mismo clan -> SIEMPRE visible.
                 // 2) Otro clan / sin clan -> decide el jugador observado con /nametag on|off.
                 boolean shouldShow = sameClan || publicNametag;
-                boolean currentlyHidden = manager.hasHiddenNametag(targetTab, viewerTab);
+                boolean currentlyHidden = manager.hasHiddenNameTag(targetTab, viewerTab);
 
                 if (shouldShow && currentlyHidden) {
-                    manager.showNametag(targetTab, viewerTab);
+                    manager.showNameTag(targetTab, viewerTab);
                 } else if (!shouldShow && !currentlyHidden) {
-                    manager.hideNametag(targetTab, viewerTab);
+                    manager.hideNameTag(targetTab, viewerTab);
                 }
             }
         }
