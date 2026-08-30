@@ -20,15 +20,13 @@ jobs:
           distribution: temurin
           java-version: '25'
           cache: maven
-          cache-dependency-path: PapuCraftNametags-source/pom.xml
 
       - name: Build with Maven
-        working-directory: PapuCraftNametags-source
         run: mvn -B clean package
 
       - name: Upload plugin jar
         uses: actions/upload-artifact@v7
         with:
           name: PapuCraftNametags-jar
-          path: PapuCraftNametags-source/target/PapuCraftNametags-*.jar
+          path: target/PapuCraftNametags-*.jar
           if-no-files-found: error
